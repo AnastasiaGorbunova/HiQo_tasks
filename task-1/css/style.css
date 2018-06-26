@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #000;
     height: 100%;
 }
@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+.m {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -24,9 +29,10 @@ a {
     width: 100%;
     background-color: #fff;
     height: 75px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
 .navigation a {
     color: #000;
     cursor: pointer;
@@ -42,7 +48,7 @@ a {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    font-family: LatoRegular, 'Times New Roman',serif;
+    font-family: LatoRegular, 'Times New Roman', serif;
     font-size: 18px;
     max-width: 660px;
     min-width: 600px;
@@ -54,8 +60,8 @@ a {
 }
 
 .main {
-    color:#fff;
-    background: url(../img/background-home.jpg) no-repeat   fixed;
+    color: #fff;
+    background: url(../img/background-home.jpg) no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 650px;
@@ -74,28 +80,31 @@ a {
 
 .name {
     font-size: 36px;
-    font-family: YesevaOne,'Times New Roman',serif;
+    font-family: YesevaOne, 'Times New Roman', serif;
 }
 
 .profession {
     font-size: 18px;
-    font-family: LatoRegular, 'Times New Roman',serif;
+    font-family: LatoRegular, 'Times New Roman', serif;
 }
 
 .about {
-    height: 540px;
+    height: 100%;
     width: 100%;
     background: url(../img/background-about.jpg) no-repeat;
     background-size: cover;
 }
+
 .about img {
+    margin: 30px;
     height: 480px;
     width: 480px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
 }
-.about-container{
+
+.about-container {
     width: 870px;
     margin: 0 auto;
     display: flex;
@@ -104,56 +113,130 @@ a {
 
 }
 
-
-
 .article {
     align-items: center;
     width: 350px;
     font-size: 24px;
-    font-family: LatoRegular, 'Times New Roman',serif;
-    color: #000;
+    font-family: LatoRegular, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 4;
 }
 
 .article p {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 10px;
     text-align: justify;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(182, 175, 183, 0.3);
+
 }
 
 .portfolio {
-    background-color:beige;
+    background-color: beige;
     background-size: cover;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 
 .figures {
-    width:90%;
+    width: 90%;
     margin: 20px auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
-
 
 .figures img {
     margin-top: 15px;
     width: 360px;
     height: 360px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio figcaption {
     font-size: 14px;
-    font-family: LatoRegular, 'Times New Roman',serif;
+    font-family: LatoRegular, 'Times New Roman', serif;
     text-transform: uppercase;
     text-align: center;
     text-shadow: 1px 1px 2px gray;
+}
 
+.figures figure {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.figures figure:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    font-family: LatoRegular, 'Times New Roman', serif;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 20px 0 5px 0;
+
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 230px;
+    margin: 20px auto;
+}
+/*
+input:invalid {
+    border-color: red;
+}*/
+
+.form input {
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+}
+
+.form button {
+    width: 90px;
+    height: 40px;
+    margin: 0 auto;
+    font-family: LatoRegular, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: #DDDDCB;
+    border-radius: 5px;
+    border: 1px solid #9d9d9d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.form button {
+    outline: none;
 }
