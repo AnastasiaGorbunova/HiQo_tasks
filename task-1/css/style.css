@@ -68,7 +68,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 500px;
-    text-shadow: 1px 1px 2px black, 0 0 1em gray
+    text-shadow: 1px 1px 2px black, 0 0 1em gray;
 
 }
 
@@ -109,18 +109,51 @@ a {
 .article {
     align-items: center;
     width: 350px;
-    font-size: 20px;
-    font-family: YesevaOne,'Times New Roman',serif;
-    color: #61625f;
+    font-size: 24px;
+    font-family: LatoRegular, 'Times New Roman',serif;
+    color: #000;
     font-weight: normal;
     display: flex;
     justify-content: space-between;
 }
 
+.article p {
+    background-color: rgba(0,0,0,0.05);
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
 .portfolio {
-    background: url(../img/2.jpg) no-repeat;
+    background-color:beige;
     background-size: cover;
-    height: 500px;
+    height: 100%;
     width:100%;
 }
 
+.figures {
+    width:90%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.figures img {
+    margin-top: 15px;
+    width: 360px;
+    height: 360px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.portfolio figcaption {
+    font-size: 14px;
+    font-family: LatoRegular, 'Times New Roman',serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+
+}
