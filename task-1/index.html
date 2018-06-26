@@ -3,128 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.css">
     <title>Portfolio</title>
 
 </head>
 <body>
 <div class="wrapper">
-<header>
-    <div class="header">
-        <nav>
-            <div class="navigation">
-                <a href="#home">home</a>
-                <a href="#about">about me</a>
-                <a href="#portfolio">portfolio</a>
-                <a href="#contact">contact</a>
-            </div>
-        </nav>
-    </div>
-</header>
+    <header>
 
-<main class="m">
-    <section class="main" id="home">
-        <div class="main-container">
+        <div class="header">
+            <nav>
+                <div class="navigation">
+                    <a href="#home">home</a>
+                    <a href="#about">about me</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </nav>
+        </div>
 
-            <img src="img/design.png"/>
-            <span class="name">
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home-container">
+
+                <img src="img/design.png"/>
+                <span class="name">
              <h1> anna tarazevich </h1>
         </span>
-            <span class="profession">
+                <span class="profession">
            <h3> photographer</h3>
         </span>
-        </div>
-
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-container">
-
-            <div class="picture">
-                <img src="img/main-picture.jpg"/>
             </div>
-            <div class="article">
 
-                <p> Free photographer. I live in the provinces, I take portraits, I study light painting and visual
-                    culture. I adhere to printing and photo design. Notes I write for readers, I do not glorify myself.
-                    I'm working on photos for the customer, and I think I'm grateful for the work done. In spirit - a
-                    wanderer, by nature - a man.
-                </p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+
+                <div class="picture">
+                    <img src="img/main-picture.jpg"/>
+                </div>
+                <div class="article">
+
+                    <p> Free photographer. I live in the provinces, I take portraits, I study light painting and visual
+                        culture. I adhere to printing and photo design. Notes I write for readers, I do not glorify
+                        myself.
+                        I'm working on photos for the customer, and I think I'm grateful for the work done. In spirit -
+                        a
+                        wanderer, by nature - a man.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="figures">
-            <figure><img src="img/figure-1.jpg"/>
-                <figcaption>
-                    love story
-                </figcaption>
+        <section class="portfolio" id="portfolio">
+            <div class="figures">
+                <figure><img src="img/figure-1.jpg"/>
+                    <figcaption>
+                        love story
+                    </figcaption>
 
-            </figure>
-            <figure><img src="img/figure-2.jpg"/>
-                <figcaption>
-                    family
-                </figcaption>
+                </figure>
+                <figure><img src="img/figure-2.jpg"/>
+                    <figcaption>
+                        family
+                    </figcaption>
 
-            </figure>
-            <figure><img src="img/figure-3.jpg"/>
-                <figcaption>
-                    wedding
-                </figcaption>
+                </figure>
+                <figure><img src="img/figure-3.jpg"/>
+                    <figcaption>
+                        wedding
+                    </figcaption>
 
-            </figure>
+                </figure>
 
-            <figure><img src="img/figure-4.jpg"/>
-                <figcaption>
-                    fashion
-                </figcaption>
+                <figure><img src="img/figure-4.jpg"/>
+                    <figcaption>
+                        fashion
+                    </figcaption>
 
-            </figure>
+                </figure>
 
-            <figure><img src="img/figure-5.jpg"/>
-                <figcaption>
-                    kids
-                </figcaption>
+                <figure><img src="img/figure-5.jpg"/>
+                    <figcaption>
+                        kids
+                    </figcaption>
 
-            </figure>
-            <figure><img src="img/figure-6.jpg"/>
-                <figcaption>
-                    portrait
-                </figcaption>
+                </figure>
+                <figure><img src="img/figure-6.jpg"/>
+                    <figcaption>
+                        portrait
+                    </figcaption>
 
-            </figure>
-        </div>
-    </section>
+                </figure>
+            </div>
+        </section>
 
-    <section class="contact" id="contact">
+        <section class="contact" id="contact">
+
         <span class="contact-info">
         <h2> how to contact me?</h2>
         <h4> Fill out the form and I will contact you! </h4>
         </span>
-        <form class="form">
-            <input type="text" name="name" placeholder="Your name *" required />
-            <input type="email" name="email" placeholder="Your email *" />
-            <input type="tel" name="phone" placeholder="Your telephone *" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" />
-            <button type="submit">SEND</button>
-        </form>
+            <form class="form">
+                <input type="text" name="name" placeholder="Your name *" required/>
+                <input type="email" name="email" placeholder="Your email *"/>
+                <input type="tel" name="phone" placeholder="Your telephone *" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"/>
+                <button type="submit">SEND</button>
+            </form>
 
-    </section>
+        </section>
 
 
-</main>
+    </main>
     <div class="push"></div>  <!-- for sticky footer -->
 </div>
-
 
 
 <footer class="footer">
 
     <div class="social">
-        <i class="fa fa-facebook-f" aria-hidden="true"></i>
-        <i class="fa fa-vk" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <a class="facebook-link" href="https://facebook.com/">
+            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a class="vk-link" href="https://vk.com/">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+        </a>
+        <a class="instagram-link" href=" https://www.instagram.com//">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
     </div>
     <span class="author"> © 2018 Анна Таразевич </span>
 
