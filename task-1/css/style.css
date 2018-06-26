@@ -22,6 +22,11 @@ a {
     flex-direction: column;
 }
 
+.wrapper {
+    min-height: 100%;
+   margin-bottom: -90px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -240,3 +245,29 @@ input:invalid {
 .form button {
     outline: none;
 }
+
+.footer {
+    padding: 25px;
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    font-family: LatoRegular, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social i, .author {
+    color: #fff;
+}
+
+.author {
+    font-size: 10px;
+}
+
+.social i {
+    padding: 10px;
+}
+ .push {
+     height: 90px;
+ }
