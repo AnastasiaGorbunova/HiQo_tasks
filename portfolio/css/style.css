@@ -33,7 +33,6 @@ a {
     justify-content: center;
     width: 100%;
     background-color: #fff;
-    height: 75px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     position: relative;
 }
@@ -41,7 +40,7 @@ a {
 .navigation a {
     color: #000;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 20px 5px;
 
 }
 
@@ -59,18 +58,13 @@ a {
     min-width: 600px;
 }
 
-.design {
-    height: 84px;
-    width: 84px;
-}
-
 .home {
     color: #fff;
     background: url(../img/background-home.jpg) no-repeat fixed;
     background-size: cover;
     width: 100%;
-    height: 650px;
     text-transform: uppercase;
+    padding: 200px 0;
 }
 
 .home-container {
@@ -78,7 +72,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
     text-shadow: 1px 1px 2px black, 0 0 1em gray;
 
 }
@@ -94,40 +87,42 @@ a {
 }
 
 .about {
-    height: 100%;
     width: 100%;
     background: url(../img/background-about.jpg) no-repeat;
     background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .about img {
-    margin: 30px;
-    height: 480px;
     width: 480px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-items: center;
+}
+
+.picture {
+    margin-right: 10px ;
+    padding: 5px;
 }
 
 .about-container {
-    width: 870px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-
+    margin: 0 auto;
+    align-items: center;
 }
 
 .article {
     align-items: center;
-    width: 350px;
+    padding: 55px 0;
+    width: 50%;
     font-size: 24px;
     font-family: LatoRegular, 'Times New Roman', serif;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
-    display: flex;
-    justify-content: space-between;
     flex-shrink: 4;
+    max-width: 800px;
 }
 
 .article p {
@@ -135,13 +130,11 @@ a {
     padding: 10px;
     text-align: justify;
     box-shadow: 0 0 20px rgba(182, 175, 183, 0.3);
-
 }
 
 .portfolio {
     background-color: beige;
     background-size: cover;
-    height: 100%;
     width: 100%;
 }
 
@@ -158,7 +151,6 @@ a {
 .figures img {
     margin-top: 15px;
     width: 360px;
-    height: 360px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -181,7 +173,6 @@ a {
 }
 
 .contact {
-    height: 100%;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -211,8 +202,8 @@ a {
 .form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 230px;
+    width: 40%;
+
     margin: 20px auto;
 }
 
@@ -228,12 +219,12 @@ input:invalid {
 }
 
 .form button {
-    width: 90px;
-    height: 40px;
+    width: 25%;
+    padding: 8px;
     margin: 0 auto;
     font-family: LatoRegular, 'Times New Roman', serif;
     font-size: 18px;
-    background-color: #DDDDCB;
+    background-color: #ddddcb;
     border-radius: 5px;
     border: 1px solid #9d9d9d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
