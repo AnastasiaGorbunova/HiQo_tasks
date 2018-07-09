@@ -32,11 +32,11 @@ let labyrinth = [
     [-1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
 ];
 let wall = -1;
-let newLab = labyrinth.slice(); //создаем независимую копию массива
+let newLab = labyrinth.slice(); //create an independent copy of the array
 let count = 0;
-let maxCount = 961; //количество шагов не должно превышать количество ячеек
-let x = 0, y = 1;//координаты начала
-let x1 = 0, y1 = 0; //координаты финиша
+let maxCount = 961; //the number of steps should not exceed the number of cells
+let x = 0, y = 1;//coordinates of the start
+let x1 = 0, y1 = 0; //coordinates of the finish
 
 function find() {
     while (true) {
